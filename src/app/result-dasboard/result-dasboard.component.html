@@ -1,0 +1,18 @@
+<h1>
+  {{title}}!
+</h1>
+
+<div>
+  <canvas
+      baseChart
+      [chartType]="'pie'"
+      [datasets]="chartData"
+      [labels]="labels"
+      [options]="chartOptions"
+      [legend]="true"
+      [colors]="colors"
+      (chartClick)="onChartClick($event)">
+  </canvas>
+</div>
+
+<button router-link = "/test">Re-Take!</button>

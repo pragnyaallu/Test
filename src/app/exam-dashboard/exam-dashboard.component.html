@@ -1,0 +1,25 @@
+<h1>Question {{question.number}}</h1>
+<mat-card class= "questionCard">
+  <h4 class="questionClass">{{question.question}}</h4>
+  <mat-radio-group class ="radioClass" (change)=selectAns($event)>
+    <mat-radio-button value="A">{{question.optionA}}</mat-radio-button><br>
+    <mat-radio-button value="B">{{question.optionB}}</mat-radio-button><br>
+    <mat-radio-button value="C">{{question.optionC}}</mat-radio-button><br>
+    <mat-radio-button value="D">{{question.optionD}}</mat-radio-button> 
+  </mat-radio-group> 
+</mat-card>
+<mat-card>
+  <button mat-raised-button class = "actionButtons" (click) = prevQuestion(question.number)>Prev</button>
+  <button mat-raised-button class = "actionButtons" (click) = nextQuestion(question.number)>Next</button>
+  <button mat-raised-button class = "actionButtons" (click) = saveAnswer(selectedAns)>Save</button>
+  <button mat-raised-button class = "actionButtons" (click) = showAllQuestion(question.number)>Show All</button> 
+  
+  <!--try routing it to a page whch diaplys the list of questions-->
+</mat-card>
+
+<div *ngIf= "showQuestionsTabs">
+  <div *ngFor="let tab of tabs">
+    <button mat-raised-button class="questionTabs">Q : <span class="tabClass">{{tab}}</span></button>
+  </div>
+</div>
+<router-outlet ></router-outlet>
