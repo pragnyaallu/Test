@@ -13,13 +13,13 @@
   <button mat-raised-button class = "actionButtons" (click) = nextQuestion(question.number)>Next</button>
   <button mat-raised-button class = "actionButtons" (click) = saveAnswer(selectedAns)>Save</button>
   <button mat-raised-button class = "actionButtons" (click) = showAllQuestion(question.number)>Show All</button> 
+  <button *ngIf= "showSubmit" mat-raised-button routerLink="/result" class="SubmitClass">Submit</button>
   
-  <!--try routing it to a page whch diaplys the list of questions-->
 </mat-card>
 
 <div *ngIf= "showQuestionsTabs">
   <div *ngFor="let tab of tabs">
-    <button mat-raised-button class="questionTabs">Q : <span class="tabClass">{{tab}}</span></button>
+    <button mat-raised-button id="questionTabs">Q : <span id="tabClass">{{tab}}</span></button>
   </div>
 </div>
 <router-outlet ></router-outlet>

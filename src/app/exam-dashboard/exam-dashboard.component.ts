@@ -17,7 +17,7 @@ export class ExamDashboardComponent implements OnInit {
   change: EventEmitter<MatRadioChange>
   res:any=[];
   question=questions[0];
-
+  showSubmit:boolean=false;
   showQuestionsTabs : boolean=false;
   tabs :any =[];
   doneQuestions:any=[];
@@ -33,8 +33,7 @@ export class ExamDashboardComponent implements OnInit {
   nextQuestion(ans){
     debugger;
     if(this.question.number == questions.length){
-      this.res;
-      this.router.navigate(['/result'])
+      this.showSubmit=true;
     }else{
       this.question=questions[this.question.number];
     }
@@ -46,7 +45,8 @@ export class ExamDashboardComponent implements OnInit {
 
   saveAnswer(number){
     this.doneQuestions[number] = true;
-    document.getElementsByClassName("tabClass").s
+    //document.getElementById("tabClass").className="answered";
+
     //cahnge the color of the Question Tab.
   }
 
