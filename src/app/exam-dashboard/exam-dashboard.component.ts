@@ -23,7 +23,7 @@ export class ExamDashboardComponent implements OnInit {
   showQuestionsTabs : boolean=false;
   tabs :any =[];
   doneQuestions:any=[];
-  timeLeft: number = 10;
+  timeLeft: number = 300;
   showTimer:string;
   interval:any;
 
