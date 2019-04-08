@@ -10,8 +10,8 @@ export const questions: questionClass[] = [
         optionC:"mars",
         optionD:'saturn',
         answer:'B',
-        category:'Geography',
-        complexity:'Simple'
+        userAns:'',
+        result:' '
     },
     {
         number:2,
@@ -21,8 +21,8 @@ export const questions: questionClass[] = [
         optionC:'Nagpur',
         optionD:'Mumbai',
         answer:'D',
-        category:'History',
-        complexity:'Complex'
+        userAns:'',
+        result:' '
     },
     {
         number:3,
@@ -32,8 +32,8 @@ export const questions: questionClass[] = [
         optionC:'1May 1965',
         optionD:'1May 1970',
         answer:'B',
-        category:'History',
-        complexity:'Medium'
+        userAns:'',
+        result:' '
     },
     {
         number:4,
@@ -43,8 +43,8 @@ export const questions: questionClass[] = [
         optionC:"Maharashtra",
         optionD:"Kerala",
         answer:"C",
-        category:"History",
-        complexity:"Simple"
+        userAns:" ",
+        result:" "
     },
     {
         number:5,
@@ -54,8 +54,8 @@ export const questions: questionClass[] = [
         optionC:"Mugal Badshaha",
         optionD:"Adilshah",
         answer:"D",
-        category:"History",
-        complexity:"Complex"
+        userAns:" ",
+        result:" "
     },
     {
         number:6,
@@ -65,9 +65,9 @@ export const questions: questionClass[] = [
         optionC:"Modern",
         optionD:"Medieval",
         answer:"A",
-        category:"GK",
-        complexity:"Simple"
-    },
+        userAns:" ",
+        result:" "
+    }/*,
     {
         number:7,
         question:"Name Sant Dnyaneshwar\"s sister.",
@@ -76,8 +76,8 @@ export const questions: questionClass[] = [
         optionC:"Saibai",
         optionD:"Jijabai",
         answer:"A",
-        category:"History",
-        complexity:"Complex"
+        userAns:" ",
+        result:" "
     },
     {
         number:8,
@@ -87,8 +87,8 @@ export const questions: questionClass[] = [
         optionC:"Leelachritra",
         optionD:"Dnyaneshwari",
         answer:"D",
-        category:"GK",
-        complexity:"Medium"
+        userAns:" ",
+        result:" "
     },
     {
         number:9,
@@ -98,8 +98,8 @@ export const questions: questionClass[] = [
         optionC:"Sopandeo",
         optionD:"Sant Ramdas",
         answer:"D",
-        category:"History",
-        complexity:"Medium"
+        userAns:" ",
+        result:" "
     },
     {
         number:10,
@@ -109,8 +109,8 @@ export const questions: questionClass[] = [
         optionC:"Johannesberg",
         optionD:"Baroda",
         answer:"B",
-        category:"History",
-        complexity:"Simple"
+        userAns:" ",
+        result:" "
     },
     {
         number:11,
@@ -120,8 +120,8 @@ export const questions: questionClass[] = [
         optionC:"Chikhaldara",
         optionD:"Toranmal",
         answer:"B",
-        category:"Geography",
-        complexity:"Simple"
+        userAns:" ",
+        result:" "
     },
     {
         number:12,
@@ -131,8 +131,8 @@ export const questions: questionClass[] = [
         optionC:"south-west",
         optionD:"north-east",
         answer:"C",
-        category:"Geography",
-        complexity:"Medium"
+        userAns:" ",
+        result:" "
     },
     {
         number:13,
@@ -142,8 +142,8 @@ export const questions: questionClass[] = [
         optionC:"Gadchiroli",
         optionD:"Amboli",
         answer:"D",
-        category:"Geography",
-        complexity:"Simple"
+        userAns:" ",
+        result:" "
     },
     {
         number:14,
@@ -153,8 +153,8 @@ export const questions: questionClass[] = [
         optionC:"Pachgani",
         optionD:"Kalsubai",
         answer:"D",
-        category:"Geography",
-        complexity:"Complex"
+        userAns:" ",
+        result:" "
     },
     {
         number:15,
@@ -164,8 +164,8 @@ export const questions: questionClass[] = [
         optionC:"Peepul",
         optionD:"Jackfruit",
         answer:"B",
-        category:"GK",
-        complexity:"Medium"
+        userAns:" ",
+        result:" "
     },
     {
         number:16,
@@ -175,8 +175,8 @@ export const questions: questionClass[] = [
         optionC:"shekaroo",
         optionD:"fox",
         answer:"C",
-        category:"GK",
-        complexity:"Complex"
+        userAns:" ",
+        result:" "
     },
     {
         number:17,
@@ -186,9 +186,9 @@ export const questions: questionClass[] = [
         optionC:"Bhaskara I",
         optionD:"Albert Einstein",
         answer:"A",
-        category:"GK",
-        complexity:"Simple"
-    }
+        userAns:" ",
+        result:" "
+    }*/
   ];
 
 

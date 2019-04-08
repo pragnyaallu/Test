@@ -6,7 +6,8 @@ export class questionClass {
     optionC: string;
     optionD: string;
     answer: string;
-    category:string;
-    complexity:string;
+    userAns:string;
+    result:string;
   }
+
   

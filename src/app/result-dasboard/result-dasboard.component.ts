@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit} from '@angular/core';
+import { ChartDataService } from './../chart-data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -9,22 +9,18 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ResultDasboardComponent implements OnInit {
   
-  constructor(
-    public route: ActivatedRoute,
-    public router: Router
-  ) { }
-  ngOnInit() {
-  }
+  constructor(public route: ActivatedRoute,public router: Router,public resultService: ChartDataService) { }
+  ngOnInit() { }
 
   title = 'Results of the Test';
   chartOptions = {
-    responsive: true    // THIS WILL MAKE THE CHART RESPONSIVE (VISIBLE IN ANY DEVICE).
+    responsive: true  
   }
   labels =  ['Correct', 'Wrong'];
   chartData = [
     {
       label: 'Results',
-      data: [21, 9] 
+      data: [this.resultService.correct, this.resultService.wrong] 
     }
   ];
   colors = [
