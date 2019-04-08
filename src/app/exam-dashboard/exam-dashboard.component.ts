@@ -73,10 +73,6 @@ export class ExamDashboardComponent implements OnInit {
     }
   }
 
-  showAllQuestion(){
-    this.showQuestionsTabs = !this.showQuestionsTabs;
-  }
-
   submitAnswers(){
     if(this.doneQuestions.indexOf(false) == -1){
       this.resultService.count();

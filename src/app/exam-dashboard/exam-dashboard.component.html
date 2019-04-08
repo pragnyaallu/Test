@@ -12,12 +12,5 @@
   <button *ngIf="showPrev" mat-raised-button class = "actionButtons" (click) = prevQuestion(question.number)>Prev</button>
   <button mat-raised-button class = "actionButtons" (click) = nextQuestion(question.number)>Next</button>
   <button mat-raised-button class = "actionButtons" (click) = saveAnswer(question.number)>Save</button>
-  <button mat-raised-button class = "actionButtons" (click) = showAllQuestion(question.number)>Show All</button> 
   <button *ngIf= "showSubmit" mat-raised-button class="SubmitClass" (click)="submitAnswers()">Submit</button>
 </mat-card>
-
-<div *ngIf= "showQuestionsTabs">
-  <div *ngFor="let tab of tabs">
-    <button mat-raised-button id="questionTabs">Q : <span id="tabClass">{{tab}}</span></button>
-  </div>
-</div>
