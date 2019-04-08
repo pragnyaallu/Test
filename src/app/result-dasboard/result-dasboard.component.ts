@@ -20,7 +20,8 @@ export class ResultDasboardComponent implements OnInit {
   chartData = [
     {
       label: 'Results',
-      data: [this.resultService.correct, this.resultService.wrong] 
+      //data: [this.resultService.correct, this.resultService.wrong] 
+      data: [5,4]
     }
   ];
   colors = [
@@ -28,9 +29,5 @@ export class ResultDasboardComponent implements OnInit {
       backgroundColor: ['#115911','#cc2525']
     }
   ]
-
-  onChartClick(event) {
-    console.log(event);
-  }
 
 }
