@@ -2,7 +2,7 @@
   <h1>Question {{question.number}}</h1>
   <mat-card class= "questionCard">
     <h4>{{question.question}}</h4>
-    <mat-radio-group class ="radioClass" (change)=selectAns($event)>
+    <mat-radio-group class ="radioClass" value = {{question.userAns}} (change)=selectAns($event)>
       <mat-radio-button value="A">{{question.optionA}}</mat-radio-button><br>
       <mat-radio-button value="B">{{question.optionB}}</mat-radio-button><br>
       <mat-radio-button value="C">{{question.optionC}}</mat-radio-button><br>
