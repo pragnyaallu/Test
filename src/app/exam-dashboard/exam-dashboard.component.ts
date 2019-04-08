@@ -65,6 +65,7 @@ export class ExamDashboardComponent implements OnInit {
 
   selectAns(event : MatRadioChange){
     if(event.value == this.question.answer){
+      
       questions[this.question.number - 1].userAns= event.value;
       questions[this.question.number - 1].result = "correct";
     }else{
