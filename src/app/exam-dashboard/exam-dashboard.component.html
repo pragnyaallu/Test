@@ -1,16 +1,18 @@
-<h1>Question {{question.number}}</h1>
-<mat-card class= "questionCard">
-  <h4 class="questionClass">{{question.question}}</h4>
-  <mat-radio-group class ="radioClass" (change)=selectAns($event)>
-    <mat-radio-button value="A">{{question.optionA}}</mat-radio-button><br>
-    <mat-radio-button value="B">{{question.optionB}}</mat-radio-button><br>
-    <mat-radio-button value="C">{{question.optionC}}</mat-radio-button><br>
-    <mat-radio-button value="D">{{question.optionD}}</mat-radio-button> 
-  </mat-radio-group> 
-</mat-card>
-<mat-card>
-  <button *ngIf="showPrev" mat-raised-button class = "actionButtons" (click) = prevQuestion(question.number)>Prev</button>
-  <button mat-raised-button class = "actionButtons" (click) = nextQuestion(question.number)>Next</button>
-  <button mat-raised-button class = "actionButtons" (click) = saveAnswer(question.number)>Save</button>
-  <button *ngIf= "showSubmit" mat-raised-button class="SubmitClass" (click)="submitAnswers()">Submit</button>
-</mat-card>
+<div class = "question-template">
+  <h1>Question {{question.number}}</h1>
+  <mat-card class= "questionCard">
+    <h4>{{question.question}}</h4>
+    <mat-radio-group class ="radioClass" (change)=selectAns($event)>
+      <mat-radio-button value="A">{{question.optionA}}</mat-radio-button><br>
+      <mat-radio-button value="B">{{question.optionB}}</mat-radio-button><br>
+      <mat-radio-button value="C">{{question.optionC}}</mat-radio-button><br>
+      <mat-radio-button value="D">{{question.optionD}}</mat-radio-button> 
+    </mat-radio-group> 
+  </mat-card>
+  <mat-card>
+    <button *ngIf="showPrev" mat-raised-button class = "actionButtons" (click) = prevQuestion(question.number)>Prev</button>
+    <button mat-raised-button class = "actionButtons" (click) = nextQuestion(question.number)>Next</button>
+    <button mat-raised-button class = "actionButtons" (click) = saveAnswer(question.number)>Save</button>
+    <button *ngIf= "showSubmit" mat-raised-button class="SubmitClass" (click)="submitAnswers()">Submit</button>
+  </mat-card>
+</div>

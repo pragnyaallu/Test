@@ -24,8 +24,8 @@ export class ResultDasboardComponent implements OnInit {
     }
   ];
   colors = [
-    { // 1st Year.
-      backgroundColor: ['green','red']
+    { 
+      backgroundColor: ['#115911','#cc2525']
     }
   ]
 

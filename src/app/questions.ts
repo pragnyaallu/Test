@@ -67,7 +67,7 @@ export const questions: questionClass[] = [
         answer:"A",
         userAns:" ",
         result:" "
-    }/*,
+    },
     {
         number:7,
         question:"Name Sant Dnyaneshwar\"s sister.",
@@ -111,7 +111,7 @@ export const questions: questionClass[] = [
         answer:"B",
         userAns:" ",
         result:" "
-    },
+    }/*,
     {
         number:11,
         question:"In the following, which is the hill-station in Sahyandri mountain?",
