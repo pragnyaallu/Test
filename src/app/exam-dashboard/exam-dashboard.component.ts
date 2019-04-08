@@ -23,14 +23,34 @@ export class ExamDashboardComponent implements OnInit {
   showQuestionsTabs : boolean=false;
   tabs :any =[];
   doneQuestions:any=[];
-  
+  timeLeft: number = 10;
+  showTimer:string;
+  interval:any;
+
   constructor(public route: ActivatedRoute, public router: Router ,public resultService: ChartDataService) {}
   ngOnInit() {
     for(let i=1;i<=questions.length;i++){
       this.tabs.push(i);
     }
+    this.timer();
   }
   
+  timer() {
+    this.interval = setInterval(() => {
+      if(this.timeLeft > 0) {
+        if(this.timeLeft == 10){
+          alert("Last 10 seconds");
+        }
+        this.timeLeft--;
+        let a= Math.floor(this.timeLeft/60);
+        let b = this.timeLeft%60;
+        this.showTimer = a +":"+b;
+      }else{
+        this.router.navigate(['/result']);
+      }
+    },1000)
+  }
+
   nextQuestion(){
     if(this.question.number != 2){
       this.showPrev = true;

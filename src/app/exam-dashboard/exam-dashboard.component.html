@@ -1,5 +1,6 @@
 <div class = "question-template">
   <h1>Question {{question.number}}</h1>
+  <button mat-raised-button class = "timerClass">{{showTimer}}</button>
   <mat-card class= "questionCard">
     <h4>{{question.question}}</h4>
     <mat-radio-group class ="radioClass" value = {{question.userAns}} (change)=selectAns($event)>

@@ -20,8 +20,7 @@ export class ResultDasboardComponent implements OnInit {
   chartData = [
     {
       label: 'Results',
-      //data: [this.resultService.correct, this.resultService.wrong] 
-      data: [5,4]
+      data: [this.resultService.correct, this.resultService.wrong] 
     }
   ];
   colors = [
